@@ -9,9 +9,9 @@
 
 import router from '@adonisjs/core/services/router'
 // import AuthController from '#controllers/auth_controller'
-// router.get('/',(request,response,next)=>{
-//   next();
-// })
+
+router.on('/').redirectToPath('/login')
+
 router.on('/login').render('login')
 
 router.on('/register').render('register')
