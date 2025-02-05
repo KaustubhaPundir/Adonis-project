@@ -12,7 +12,7 @@ export default class extends BaseSchema {
       table.string('ParentID')
       table.string('Domain')
       table.string('Partner')
-      table.string('Islock').notNullable()
+      table.boolean('Islock').notNullable().defaultTo(false)
       table.bigInteger('Balance')
 
       table.timestamp('created_at').notNullable()

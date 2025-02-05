@@ -65,7 +65,7 @@ export default class AuthController {
 
             user.save();
 
-            response.send({message:'User register success'})
+            response.send('<h1>User registration success</h1>')
 
         }catch(err){
             console.log('errr',err)
