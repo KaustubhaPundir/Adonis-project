@@ -21,6 +21,9 @@ export default class User extends compose(BaseModel, AuthFinder) {
   declare Usertype: string
 
   @column()
+  declare Password: string
+
+  @column()
   declare ParentID: string
 
   @column()

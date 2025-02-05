@@ -8,6 +8,7 @@ export default class extends BaseSchema {
       table.increments('Userid').notNullable()
       table.string('Username').notNullable()
       table.string('Usertype').notNullable
+      table.string('Password').notNullable()
       table.string('ParentID')
       table.string('Domain')
       table.string('Partner')
