@@ -27,12 +27,5 @@ export default await Env.create(new URL('../', import.meta.url), {
   DB_PORT: Env.schema.number(),
   DB_USER: Env.schema.string(),
   DB_PASSWORD: Env.schema.string.optional(),
-  DB_DATABASE: Env.schema.string(),
-  // HCAPTCHA_SECRET_KEY: Env.schema.string(),
-  // HCAPTCHA_SITE_KEY: Env.schema.string(),
-
-  // TURNSTILE_SITE_KEY: Env.schema.string.optional(),
-  // TURNSTILE_SECRET: Env.schema.string.optional(),
-  // RECAPTCHA_SITE_KEY: Env.schema.string.optional(),
-  // RECAPTCHA_SECRET: Env.schema.string.optional()
+  DB_DATABASE: Env.schema.string()
 })
