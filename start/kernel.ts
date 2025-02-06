@@ -28,6 +28,7 @@ server.use([
   () => import('@adonisjs/cors/cors_middleware'),
 ])
 
+
 /**
  * The router middleware stack runs middleware on all the HTTP
  * requests with a registered route.
@@ -41,3 +42,4 @@ router.use([() => import('@adonisjs/core/bodyparser_middleware'), () => import('
 export const middleware = router.named({
   auth: () => import('#middleware/auth_middleware')
 })
+

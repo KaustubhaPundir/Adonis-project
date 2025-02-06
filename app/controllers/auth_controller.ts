@@ -55,7 +55,7 @@ export default class AuthController {
         try{
            
             const userExist = await User.findBy('Username',data.username);
-            if(userExist) return response.status(400).json({message:'user already exist'});
+            if(userExist) return response.status(400).send('<h1>User already registered</h1>');
 
             const user = new User();
             
